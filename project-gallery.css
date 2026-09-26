@@ -1,0 +1,419 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    background-color: #0a0a0a;
+
+    color: #ffffff;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+
+.navbar {
+
+    background: rgba(10, 10, 10, 0.88);
+
+    backdrop-filter: blur(12px);
+
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.06);
+
+}
+
+.navbar-brand {
+
+    font-size: 1.4rem;
+
+    letter-spacing: 1px;
+
+    color: #ffffff !important;
+
+}
+
+.navbar-brand span {
+
+    color: #6c63ff;
+
+}
+
+.nav-link {
+
+    color: #999999 !important;
+
+    font-weight: 500;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+.nav-link:hover {
+
+    color: #ffffff !important;
+
+}
+
+.navbar-toggler {
+
+    border-color:
+        rgba(255, 255, 255, 0.2);
+
+}
+
+.navbar-toggler:focus {
+
+    box-shadow: none;
+
+}
+
+
+/* =====================================================
+   PROJECT HEADER
+===================================================== */
+
+.project-header {
+
+    padding-top: 150px;
+
+    padding-bottom: 80px;
+
+    background:
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(108, 99, 255, 0.12),
+            transparent 35%
+        ),
+        #0a0a0a;
+
+}
+
+
+.back-link {
+
+    display: inline-block;
+
+    margin-bottom: 40px;
+
+    color: #888888;
+
+    text-decoration: none;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+.back-link:hover {
+
+    color: #ffffff;
+
+}
+
+
+.section-label {
+
+    margin-bottom: 12px;
+
+    color: #6c63ff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+}
+
+
+.project-header h1 {
+
+    margin-bottom: 20px;
+
+    font-size: clamp(
+        2.5rem,
+        6vw,
+        4.5rem
+    );
+
+    font-weight: 700;
+
+    letter-spacing: -2px;
+
+}
+
+
+.project-description {
+
+    max-width: 700px;
+
+    margin-bottom: 25px;
+
+    color: #888888;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+/* =====================================================
+   TECHNOLOGIES
+===================================================== */
+
+.project-tech {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+}
+
+.project-tech span {
+
+    padding:
+        7px 13px;
+
+    background-color: #171717;
+
+    border:
+        1px solid #292929;
+
+    border-radius: 20px;
+
+    color: #aaaaaa;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   GALLERY
+===================================================== */
+
+.gallery-section {
+
+    padding:
+        90px 0;
+
+    background-color: #0d0d0d;
+
+}
+
+
+.gallery-header {
+
+    margin-bottom: 50px;
+
+}
+
+.gallery-header h2 {
+
+    margin-bottom: 15px;
+
+    font-size: 2.5rem;
+
+    font-weight: 700;
+
+}
+
+.gallery-header p:not(.section-label) {
+
+    color: #777777;
+
+    line-height: 1.7;
+
+}
+
+
+/* =====================================================
+   GALLERY GRID
+===================================================== */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.gallery-item {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: #111111;
+
+    border:
+        1px solid #222222;
+
+    border-radius: 14px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+
+}
+
+
+.gallery-item:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #6c63ff;
+
+}
+
+
+.gallery-item img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+    transition:
+        transform 0.5s ease;
+
+}
+
+
+.gallery-item:hover img {
+
+    transform: scale(1.025);
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.project-footer {
+
+    padding:
+        30px 0;
+
+    background-color: #080808;
+
+    border-top:
+        1px solid #1d1d1d;
+
+}
+
+
+.project-footer .container {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.project-footer p {
+
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 14px;
+
+}
+
+
+.project-footer a {
+
+    color: #888888;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition:
+        color 0.3s ease;
+
+}
+
+
+.project-footer a:hover {
+
+    color: #ffffff;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .project-header {
+
+        padding-top: 125px;
+
+        padding-bottom: 60px;
+
+    }
+
+
+    .gallery {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 18px;
+
+    }
+
+
+    .gallery-header h2 {
+
+        font-size: 2rem;
+
+    }
+
+
+    .project-footer .container {
+
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+}
